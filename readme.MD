@@ -1,5 +1,5 @@
-# The simple implementation of max clique using Bron - Kerbosch algorithm.
+## Simple Implementation of Max Clique Finder using the Bron-Kerbosch Algorithm.
 
-## Instruction for running the this project.
+### Instructions for Running This Project
 
-- python main <full_file_path>
+- type: python main <full_file_path>
