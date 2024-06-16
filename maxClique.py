@@ -1,4 +1,3 @@
-from collections import defaultdict
 from graph import Graph
 from os import sys
 

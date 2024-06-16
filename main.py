@@ -12,6 +12,9 @@ def loadGraphInfo(filename):
                 edges.append((u, v))
             if line[0] == 'p':
                 N = int(line.split(' ')[2])
+    print('Graph Info:')
+    print(f'Nodes: {N}')
+    print(f'Edges: {len(edges)}')
     return N, edges
 
 
@@ -28,8 +31,10 @@ def main(filename):
     cliques = []
     vertices = list(graph.keys())
     bron_kerbosch([], vertices, [], graph, cliques)
-    index = max([len(x)] for x in cliques)
-    print("Cliques encontrados:", index)
+    size = max([len(x)] for x in cliques)
+    max_lique = max(cliques, key=len)
+    print("Cliques Máximo - Tamanho:", size)
+    print("Cliques encontrados:", max_lique)
 
 
 if __name__ == '__main__':
